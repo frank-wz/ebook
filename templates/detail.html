@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block page-main %}
+
+    <div class="col-xs-3 col-sm-3 col-md-3">
+        <img src="{{ book_obj.course_img }}" referrerpolicy="never" class="img-responsive" alt="">
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6">
+        <p>书名：<a href="/archives/{{ book_obj.id }}">{{ book_obj.title }}</a></p>
+        <p>作者：<a href="/archives/?query={{ book_obj.authors.get }}">{{ book_obj.authors.get }}</a></p>
+        <p>上架日期: {{ book_obj.pub_date }}</p>
+        <p>ISBN：<a href="/archives/?query={{ book_obj.isbn }}">{{ book_obj.isbn }}</a></p>
+{#        <p>ISSN<a href="">{{ book_obj.issn }}</a></p>#}
+        <p>语言: {{ book_obj.language.all }}</p>
+        <p>标签: <a href="">{{ book_obj.book_tag.all }}</a></p>
+        <hr>
+        <p>图书简介：</p>
+        <p>{{ book_obj.brief }}</p>
+        <a class="btn btn-info" href="{{ book_obj.bpan_link }}" role="button">百度网盘提取码：{{ book_obj.bpan_code }}</a>
+
+
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-3">
+        标签列表
+        各类标签按钮
+        广告等预留位
+    </div>
+
+
+
+
+{% endblock %}

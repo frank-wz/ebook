@@ -1,0 +1,39 @@
+<nav class="nav nav-pills"> <!--.navbar-fixed-top 固定在顶部   胶囊：class="nav nav-pills"  默认：class="navbar navbar-default-->
+    <div class="container-fluid">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="{% url 'index' %}">首页 <span class="sr-only">(current)</span></a></li>
+                <li><a href="{% url 'category' %}">所有分类</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">所有分类 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/category">所有</a></li>
+                        <li><a href="/category/1">文学</a></li>
+                        <li><a href="/category/2">人文社科</a></li>
+                        <li><a href="/category/3">经济管理</a></li>
+                        <li><a href="/category/4">科技科普</a></li>
+                        <li><a href="/category/5">计算机于互联网</a></li>
+                        <li><a href="/category/6">成功励志</a></li>
+                        <li><a href="/category/7">生活</a></li>
+                        <li><a href="/category/8">少儿</a></li>
+                        <li><a href="/category/9">艺术设计</a></li>
+                        <li><a href="/category/10">漫画绘本</a></li>
+                        <li><a href="/category/11">教育考试</a></li>
+                        <li><a href="/category/12">杂志</a></li>
+                        <li><a href="/category/13">小说</a></li>
+                        {#            <li role="separator" class="divider"></li>#}
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right" method="get">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="全站搜索" name="query">
+                </div>
+                <button type="submit" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>

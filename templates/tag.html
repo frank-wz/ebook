@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block page-main %}
+
+<div>
+    <div>
+        {% for ct in tag %}
+            <a href="/tag/{{ ct.0 }}">{{ ct.1 }}</a>
+        {% endfor %}
+    </div>
+    <div>
+        {% for book in data %}
+            <div>
+                <a href="/archives/{{ book.id }}">书名：{{ book.title }}</a>
+{#                <p>{{ book.id }}</p>#}
+                <p>作者：{{ book.authors__name }}</p>
+                <img src="{{ book.course_img }}" referrerpolicy="never" alt="">
+            </div>
+            <hr>
+        {% endfor %}
+    </div>
+    <div>
+        {{ page_html|safe }}
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block page-main %}
+
+
+    <div>
+        <hr>
+        <div>
+            <div>
+                <h4>图书一级分类：</h4>
+            </div>
+            {% for ct in category %}
+                <a href="/category/{{ ct.0 }}" class="btn btn-default">{{ ct.1 }}</a>
+            {% endfor %}
+            <hr>
+        </div>
+
+        <div>
+            {% for ct in tag %}
+                <a href="/tag/{{ ct.0 }}" class="btn btn-default">{{ ct.1 }}</a>
+            {% endfor %}
+        </div>
+        {% if not data %}
+            <div class="col-md-12">
+                <p>没找到相关信息</p>
+                <hr>
+            </div>
+        {% endif %}
+        {% for book in data %}
+            <div>
+                <div class="col-md-1">
+                    <img src="{{ book.course_img }}" referrerpolicy="never" style="height: 100px" alt="">
+                </div>
+                <div class="col-md-7"><a href="/archives/{{ book.id }}">书名：{{ book.title }}</a>
+                    <p>作者：{{ book.authors__name }}</p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <hr>
+            </div>
+
+        {% endfor %}
+
+        {% if data %}
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div>
+                        {{ page_html|safe }}
+                    </div>
+
+                </div>
+
+            </div>
+        {% endif %}
+
+{% endblock %}

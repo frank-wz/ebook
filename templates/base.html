@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>电子书分享小站</title>
+    {% load static %}
+    <link href="{% static 'bootstrap-3.3.7/css/bootstrap.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'font-awesome-4.7.0/css/font-awesome.css' %}">
+    {% block page-css %}
+
+    {% endblock %}
+
+</head>
+
+<body data-gr-c-s-loaded="true">
+
+<div class="container" >
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="page-header">
+          <h1>悦读书馆 <small>一家小而全的电子书馆</small></h1>
+        </div>
+        </div>
+    </div>
+
+{#    {% include 'nav.html' %}#}
+
+    {% include 'nav_dropdown.html' %}
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            {% block page-main %}
+
+            {% endblock %}
+        </div>
+    </div>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <hr>
+        <p style="text-align: center">本站所有资源，均来自互联网，如有侵权，请联系站长，本站不负一切责任！</p>
+    </div>
+</div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{% static 'jQuery.js' %}"></script>
+<script src="{% static 'bootstrap-3.3.7/js/bootstrap.js' %}"></script>
+{% block page-js %}
+
+{% endblock %}
+
+</body>
+</html>
