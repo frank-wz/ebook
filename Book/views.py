@@ -5,6 +5,15 @@ from Book.models import FIRST_CATEGORY_LIST, TAG_LIST
 from utils.mypage import Pagination
 from django.db.models import Q
 from django.conf import settings
+import logging
+
+# 缓存使用redis时使用
+# from django_redis import get_redis_connection
+# conn = get_redis_connection("default")
+
+# 生成一个以当前模块名为名字的logger实例
+logger = logging.getLogger(__name__)
+# collect_logger = logging.getLogger('collect')
 
 
 per_page = settings.PER_PAGE
@@ -18,6 +27,7 @@ tag_list = []
 for i in range(len(TAG_LIST)):
     tag_list.append(TAG_LIST[i])
 
+
 def _get_query_q(request, field_list, op='OR'):
     query_value = request.GET.get('query', '')
     q = Q()
@@ -28,7 +38,7 @@ def _get_query_q(request, field_list, op='OR'):
     return q
 
 
-def search(request, classification=0, tag=0):
+def search(request, classification=0, ntag=0):
     url_prefix = request.path_info
     # 分页用，获取查询词 为分页做拼接
     qd = request.GET.copy()
@@ -37,36 +47,36 @@ def search(request, classification=0, tag=0):
     if classification:
         query_set = Book.objects.filter(first_category=classification).values('id', 'title', 'course_img',
                                                                               'authors__name')
-        if request.GET.get('query'):
-            q = _get_query_q(request, ['title', 'authors__name', 'isbn', ])  # 按需添加
-            query_set = query_set.filter(q)
-        page_obj = Pagination(current_page, query_set.count(), url_prefix, qd, per_page)
-        data = query_set[page_obj.start:page_obj.end]
 
-        return {'category': category, 'data': data, 'page_html': page_obj.page_html()}
+    elif ntag:
+        query_set = Book.objects.filter(book_tag=ntag).values('id', 'title', 'course_img', 'authors__name')
 
-    elif tag:
-        query_set = Book.objects.filter(book_tag=tag).values('id', 'title', 'course_img', 'authors__name')
-        if request.GET.get('query'):
-            q = _get_query_q(request, ['title', 'authors__name', 'isbn', ])  # 按需添加
-            query_set = query_set.filter(q)
-        page_obj = Pagination(current_page, query_set.count(), url_prefix, qd, per_page)
-        data = query_set[page_obj.start:page_obj.end]
+    else:
+        query_set = Book.objects.all().values('id', 'title', 'course_img', 'authors__name','language', 'book_tag')
 
-        return {'tag': tag, 'data': data, 'page_html': page_obj.page_html()}
-
-    query_set = Book.objects.all().values('id', 'title', 'course_img', 'authors__name')
     q = _get_query_q(request, ['title', 'authors__name', 'isbn', ])  # 按需添加
     query_set = query_set.filter(q)
     page_obj = Pagination(current_page, query_set.count(), url_prefix, qd, per_page)
     data = query_set[page_obj.start:page_obj.end]
-    # 区分哪个网址，返回相应网址数据列表
-    if url_prefix.split('/')[1] == 'category':
-        return {'data': data, 'page_html': page_obj.page_html(), 'category': category,}
-    if url_prefix.split('/')[1] == 'tag':
-        return {'data': data, 'page_html': page_obj.page_html(), 'tag': tag}
+    print(data)
+    # 区分是否为搜索
+    if request.GET.get('query'):
+        return {'data': data, 'page_html': page_obj.page_html()}
+    # 不是搜索请求， 区分哪个网址，返回相应网址数据列表
+    elif url_prefix.split('/')[1] == 'category':
+        if url_prefix.split('/')[2]:
+            return {'data': data, 'page_html': page_obj.page_html(), 'category': category,
+                'categorynum': int(url_prefix.split('/')[2])}
+        return {'data': data, 'page_html': page_obj.page_html(), 'category': category, }
+    elif url_prefix.split('/')[1] == 'tag':
+        if url_prefix.split('/')[2]:
+            return {'data': data, 'page_html': page_obj.page_html(), 'tag': tag_list,
+                'tagnum': int(url_prefix.split('/')[2])}
+        return {'data': data, 'page_html': page_obj.page_html(), 'tag': tag_list, }
+    return {'data': data, 'page_html': page_obj.page_html(), }
 
 
+# 首页
 class IndexView(View):
     def get(self, request):
         # 展示首页页面-网站的信息、分类、搜索框、展示多少热门图书，标签
@@ -82,21 +92,33 @@ class IndexView(View):
         return render(request, 'index.html', {'data': query_set, })
 
 
+# 分类
 class FirstCategoryView(View):
-    def get(self, request, classification=0, tag=0):
+    def get(self, request, classification=0):
         if request.GET.get('query'):
             data = search(request)
             return render(request, 'bookshow_searchshow.html', data)
-        data = search(request,classification,tag)
+        data = search(request, classification=classification)
+        return render(request, 'bookshow_searchshow.html', data)
+
+
+# 标签
+class TagView(View):
+    def get(self, request, ntag=0):
+        if request.GET.get('query'):
+            data = search(request)
+            return render(request, 'bookshow_searchshow.html', data)
+        data = search(request, ntag=ntag)
         return render(request, 'bookshow_searchshow.html', data)
 
 
 # 详情页
 class Archives(View):
-    def get(self, request, bid):
+    def get(self, request, bid=0):
         if request.GET.get('query'):
             data = search(request)
             return render(request, 'bookshow_searchshow.html', data)
+        if bid == 0:
+            return redirect('/index')
         book_obj = Book.objects.filter(id=int(bid)).first()
         return render(request, 'detail.html', {'book_obj': book_obj, })
-

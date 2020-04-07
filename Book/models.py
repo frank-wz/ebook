@@ -81,10 +81,10 @@ class Book(models.Model):
     def __str__(self):
         return self.title
 
-    class Meta:
-        verbose_name = "图书表"
-        db_table = verbose_name
-        verbose_name_plural = verbose_name
+    # class Meta:
+        # verbose_name = "图书表"
+        # db_table = verbose_name
+        # verbose_name_plural = verbose_name
 
 
 class Author(models.Model):
@@ -94,7 +94,7 @@ class Author(models.Model):
     def __str__(self):
         return self.name
 
-    class Meta:
-        verbose_name = "作者表"
-        db_table = verbose_name
-        verbose_name_plural = verbose_name
+    # class Meta:
+        # verbose_name = "作者表"
+        # db_table = verbose_name
+        # verbose_name_plural = verbose_name

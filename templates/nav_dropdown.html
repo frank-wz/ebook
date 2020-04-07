@@ -1,10 +1,21 @@
-<nav class="nav nav-pills"> <!--.navbar-fixed-top 固定在顶部   胶囊：class="nav nav-pills"  默认：class="navbar navbar-default-->
+{#<nav class="nav nav-pills"> <!--.navbar-fixed-top 固定在顶部   胶囊：class="nav nav-pills"  默认：class="navbar navbar-default-->#}
+<nav class="navbar navbar-default">
     <div class="container-fluid">
+        <div class="navbar-header">
+            <!--在移动端的时候导航条折叠起来，三横的样式出现，点击该样式可以显示或隐藏导航条上的内容-->
+            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">logo</a>
+        </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a href="{% url 'index' %}">首页 <span class="sr-only">(current)</span></a></li>
-                <li><a href="{% url 'category' %}">所有分类</a></li>
+{#                <li><a href="{% url 'category' %}">所有分类</a></li>#}
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">所有分类 <span class="caret"></span></a>
@@ -25,6 +36,7 @@
                         <li><a href="/category/13">小说</a></li>
                         {#            <li role="separator" class="divider"></li>#}
                     </ul>
+                <li><a href="{% url 'tag' %}">所有标签</a></li>
                 </li>
             </ul>
             <form class="navbar-form navbar-right" method="get">

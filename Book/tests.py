@@ -41,3 +41,22 @@ from django.test import TestCase
 #
 #     title = models.BookDetail.objects.first().book.title
 #     print(title)
+
+
+# 今日内容
+# 解决搜索问题
+# 检查搜索页面分页是否可用
+# 加入日志
+# 加入全局缓存
+# 加入标签
+# 标签 语言显示问题
+
+
+# 测试函数修改全局列表，全局变量变化吗
+# lst = [1,2,3,4,5,6]
+#
+# def func():
+#     lst = []
+#     print(lst)
+# func()
+# print(lst)

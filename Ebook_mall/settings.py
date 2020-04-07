@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    # 'django.middleware.cache.UpdateCacheMiddleware',    # 全站缓存
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -48,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'django.middleware.cache.FetchFromCacheMiddleware', #全站缓存
 ]
 
 ROOT_URLCONF = 'Ebook_mall.urls'
@@ -77,7 +79,7 @@ WSGI_APPLICATION = 'Ebook_mall.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql', # 告诉Django要连接的是MYSQl数据库
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'ebook',    # 数据库名称
         'HOST': '127.0.0.1',    # 数据库的IP
         'PORT': 3306,   # 数据库的端口
@@ -109,9 +111,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-hans'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
@@ -131,3 +133,113 @@ STATICFILES_DIRS = [
 
 # 分页器定制每页展示条数
 PER_PAGE = 3
+
+# 日志文件的配置
+# 项目日志文件存放的目录
+BASE_LOG_DIR = os.path.join(BASE_DIR, "log")
+# 日志的配置项
+LOGGING = {
+    'version': 1,   # 保留字默认就是1
+    'disable_existing_loggers': False,  # 是否禁用Django框架开发的时候已经存在的logger实例
+    'formatters': {     # 格式化器
+        'standard': {   # 标准格式
+            'format': '[%(asctime)s][%(threadName)s:%(thread)d][task_id:%(name)s][%(filename)s:%(lineno)d]'
+                      '[%(levelname)s][%(message)s]'
+        },
+        'simple': { # 简单的格式
+            'format': '[%(levelname)s][%(asctime)s][%(filename)s:%(lineno)d]%(message)s'
+        },
+        'collect': {    # collect 格式
+            'format': '%(message)s'
+        }
+    },
+    'filters': {    # 过滤器
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+    },
+    'handlers': {   # 处理器
+        'console': {    # 定义一个将日志在终端输出的处理器
+            'level': 'DEBUG',
+            'filters': ['require_debug_true'],  # 只有在Django debug为True时才在屏幕打印日志
+            'class': 'logging.StreamHandler',   # 日志流
+            'formatter': 'simple'   # 用简单的格式打印日志
+        },
+        'SF': { # 定义一个名为SF的日志处理器(名字随便起)
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',  # 保存到文件，根据文件大小自动切
+            'filename': os.path.join(BASE_LOG_DIR, "xxx_info.log"),  # 日志文件
+            'maxBytes': 1024 * 1024 * 50,  # 日志大小 50M
+            'backupCount': 3,  # 备份数为3  xx.log --> xx.log.1 --> xx.log.2 --> xx.log.3
+            'formatter': 'standard',    # 使用标准格式记录日志
+            'encoding': 'utf-8',    # 日志文件的编码
+        },
+        'TF': {     # 定义一个名为TF的日志处理器(名字随便起)
+            'level': 'INFO',
+            'class': 'logging.handlers.TimedRotatingFileHandler',  # 保存到文件，根据时间自动切
+            'filename': os.path.join(BASE_LOG_DIR, "xxx_info.log"),  # 日志文件
+            'backupCount': 3,  # 备份数为3  xx.log --> xx.log.2018-08-23_00-00-00 --> xx.log.2018-08-24_00-00-00 --> ...
+            'when': 'D',  # 每天一切， 可选值有S/秒 M/分 H/小时 D/天 W0-W6/周(0=周一) midnight/如果没指定时间就默认在午夜
+            'formatter': 'standard',
+            'encoding': 'utf-8',
+        },
+        'error': {
+            'level': 'ERROR',
+            'class': 'logging.handlers.RotatingFileHandler',  # 保存到文件，自动切
+            'filename': os.path.join(BASE_LOG_DIR, "xxx_err.log"),  # 日志文件
+            'maxBytes': 1024 * 1024 * 5,  # 日志大小 50M
+            'backupCount': 5,
+            'formatter': 'standard',
+            'encoding': 'utf-8',
+        },
+        'collect': {
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',  # 保存到文件，自动切
+            'filename': os.path.join(BASE_LOG_DIR, "xxx_collect.log"),
+            'maxBytes': 1024 * 1024 * 50,  # 日志大小 50M
+            'backupCount': 5,
+            'formatter': 'collect',
+            'encoding': "utf-8"
+        }
+    },
+    'loggers': {    # 日志实例对象
+        '': {  # 默认的logger应用如下配置
+            'handlers': ['SF', 'console', 'error'],  # 上线之后可以把'console'移除
+            'level': 'DEBUG',
+            'propagate': True,  # 是否向上传递日志流
+        },
+        'collect': {  # 名为 'collect'的logger还单独处理
+            'handlers': ['console', 'collect'],
+            'level': 'INFO',
+        }
+    },
+}
+
+# 缓存
+# 全局的配置项
+# CACHE_MIDDLEWARE_KEY_PREFIX = 'champzee'           # 表示全局缓存的prefix
+# CACHE_MIDDLEWARE_SECONDS = 600                     # 表示全局缓存的过期时间
+# CACHE_MIDDLEWARE_ALIAS = 'default'                 # 表示全局缓存使用的CACHES配置
+
+# redis
+# CACHES = {
+#     "default": {
+#         "BACKEND": "django_redis.cache.RedisCache",
+#         "LOCATION": "redis://127.0.0.1:6379",
+#         "OPTIONS": {
+#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#             "CONNECTION_POOL_KWARGS": {"max_connections": 100}
+#             # "PASSWORD": "密码",
+#         }
+#     }
+# }
+
+
+# 文件
+# CACHES = {
+#             'default': {
+#                 'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+#                 'LOCATION': 'cache',
+#             }
+#         }
+#
