@@ -53,17 +53,23 @@ def search(request, classification=0, ntag=0):
 
     else:
         query_set = Book.objects.all().values('id', 'title', 'course_img', 'authors__name','language', 'book_tag')
-
-    q = _get_query_q(request, ['title', 'authors__name', 'isbn', ])  # 按需添加
-    query_set = query_set.filter(q)
-    page_obj = Pagination(current_page, query_set.count(), url_prefix, qd, per_page)
-    data = query_set[page_obj.start:page_obj.end]
-    print(data)
+        print(query_set)
+    # q = _get_query_q(request, ['title', 'authors__name', 'isbn', ])  # 模糊检索字段，按需添加
+    # query_set = query_set.filter(q)
+    # page_obj = Pagination(current_page, query_set.count(), url_prefix, qd, per_page)
+    # data = query_set[page_obj.start:page_obj.end]
     # 区分是否为搜索
     if request.GET.get('query'):
+        q = _get_query_q(request, ['title', 'authors__name', 'isbn', ])  # 模糊检索字段，按需添加
+        query_set = query_set.filter(q)
+        page_obj = Pagination(current_page, query_set.count(), url_prefix, qd, per_page)
+        data = query_set[page_obj.start:page_obj.end]
         return {'data': data, 'page_html': page_obj.page_html()}
     # 不是搜索请求， 区分哪个网址，返回相应网址数据列表
-    elif url_prefix.split('/')[1] == 'category':
+
+    page_obj = Pagination(current_page, query_set.count(), url_prefix, qd, per_page)
+    data = query_set[page_obj.start:page_obj.end]
+    if url_prefix.split('/')[1] == 'category':
         if url_prefix.split('/')[2]:
             return {'data': data, 'page_html': page_obj.page_html(), 'category': category,
                 'categorynum': int(url_prefix.split('/')[2])}

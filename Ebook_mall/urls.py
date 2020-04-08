@@ -31,4 +31,6 @@ urlpatterns = [
     # 可能存在的问题是用的数据库id做bid，容易暴露，可换成自己的编号，后期可添加到表中
     url(r'^archives/$', views.Archives.as_view(),name='qarchives'),
     url(r'^archives/(?P<bid>\d+)/', views.Archives.as_view(),name='archives'),
+    # 除以上均跳转到首页
+    url(r'^.*$', views.IndexView.as_view()),
 ]

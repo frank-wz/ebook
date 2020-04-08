@@ -46,6 +46,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+    'utils.my_throttle.ThrottleMiddleware', # 频率限制中间件
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -214,6 +215,13 @@ LOGGING = {
         }
     },
 }
+
+
+# 频率限制配置
+ACCESS_LIMIT = 10 # 单位时间，不设置 默认是每60秒
+ACCESS_RATE = 25 # 单位时间内允许的访问次数， 不设置 默认为30
+
+
 
 # 缓存
 # 全局的配置项

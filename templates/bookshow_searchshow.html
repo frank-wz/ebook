@@ -10,9 +10,9 @@
 
                 {% for ct in category %}
                     {% if categorynum == ct.0 %}
-                        <a href="/category/{{ ct.0 }}" class="btn btn-default active">{{ ct.1 }}</a>
+                        <a href="/category/{{ ct.0 }}/" class="btn btn-default active">{{ ct.1 }}</a>
                     {% else %}
-                        <a href="/category/{{ ct.0 }}" class="btn btn-default">{{ ct.1 }}</a>
+                        <a href="/category/{{ ct.0 }}/" class="btn btn-default">{{ ct.1 }}</a>
                     {% endif %}
 
                 {% endfor %}
@@ -30,9 +30,9 @@
 
                 {% for ct in tag %}
                     {% if tagnum == ct.0 %}
-                        <a href="/tag/{{ ct.0 }}" class="btn btn-default active">{{ ct.1 }}</a>
+                        <a href="/tag/{{ ct.0 }}/" class="btn btn-default active">{{ ct.1 }}</a>
                     {% else %}
-                        <a href="/tag/{{ ct.0 }}" class="btn btn-default">{{ ct.1 }}</a>
+                        <a href="/tag/{{ ct.0 }}/" class="btn btn-default">{{ ct.1 }}</a>
                     {% endif %}
 
                 {% endfor %}
@@ -56,7 +56,7 @@
                                 <img src="{{ book.course_img }}" referrerpolicy="never" style="height: 100px" alt="">
                             </div>
                             <div class="col-xs-9 col-sm-9 col-md-10" style="margin-left: 1%">
-                                <blockquote><p>书名：<a href="/archives/{{ book.id }}">{{ book.title }}</a></p>
+                                <blockquote><p>书名：<a href="/archives/{{ book.id }}/">{{ book.title }}</a></p>
                                 <p>作者：{{ book.authors__name }}</p></blockquote>
 {#                                <p>标签: <a href="/tag/{{ book.book_tag }}">{{ book.get_book_tag_choices_display }}</a></p>#}
                             </div>
