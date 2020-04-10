@@ -39,6 +39,19 @@
                 <hr>
             {% endif %}
         </div>
+
+{#            {% if data %}#}
+{#            <div class="row">#}
+{#                <div class="col-xs-12 col-sm-12 col-md-12">#}
+{#                    <div>#}
+{#                        {{ page_html|safe }}#}
+{#                    </div>#}
+{##}
+{#                </div>#}
+{##}
+{#            </div>#}
+{#        {% endif %}#}
+
         {% if not data %}
             <div class="row">
                 <div class="col-md-12">
@@ -53,11 +66,24 @@
                     {% for book in data %}
                         <div class="row">
                             <div class="col-xs-2 col-sm-2 col-md-1">
-                                <img src="{{ book.course_img }}" referrerpolicy="never" style="height: 100px" alt="">
+                                <img src="{{ book.book_img }}" referrerpolicy="never" style="height: 100px" alt="">
                             </div>
                             <div class="col-xs-9 col-sm-9 col-md-10" style="margin-left: 1%">
-                                <blockquote><p>书名：<a href="/archives/{{ book.id }}/">{{ book.title }}</a></p>
-                                <p>作者：{{ book.authors__name }}</p></blockquote>
+                                <blockquote><p><i class="fa fa-user-o" aria-hidden="true"></i> 书名： <a href="/archives/{{ book.id }}/">{{ book.title }}</a></p>
+                                <p><i class="fa fa-book" aria-hidden="true"></i> 作者：
+                                    {% for author in book.authors.all %}
+                                         <a href="?query={{ author.name }}">{{ author.name }}</a>
+                                    {% endfor %}</p>
+                                <p><i class="fa fa-bookmark-o" aria-hidden="true"></i> 标签：
+                                    {% if book.tags.all %}
+                                    {% for tag in book.tags.all %}
+                                        <a href="?query={{ tag.name }}" class="label label-info" >{{ tag.name }}</a>
+                                    {% endfor %}
+                                    {% else %}
+                                    暂无
+                                    {% endif %}
+
+                                </p></blockquote>
 {#                                <p>标签: <a href="/tag/{{ book.book_tag }}">{{ book.get_book_tag_choices_display }}</a></p>#}
                             </div>
                         </div>

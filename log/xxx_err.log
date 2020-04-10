@@ -289,3 +289,1270 @@ Traceback (most recent call last):
   File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 265, in __getitem__
     raise TypeError
 TypeError
+[2020-04-10 22:03:15,056][Thread-1:14956][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /tag/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 99, in get
+    return render(request, 'index.html', {'data': query_set, })
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 216, in render
+    return template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'tag' with no arguments not found. 1 pattern(s) tried: ['tag/(?P<ntag>\\d+)/$']
+[2020-04-10 22:03:24,314][Thread-3:6084][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /index/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 99, in get
+    return render(request, 'index.html', {'data': query_set, })
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 216, in render
+    return template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'tag' with no arguments not found. 1 pattern(s) tried: ['tag/(?P<ntag>\\d+)/$']
+[2020-04-10 22:03:34,544][Thread-7:15120][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /index/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 99, in get
+    return render(request, 'index.html', {'data': query_set, })
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 216, in render
+    return template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'tag' with no arguments not found. 1 pattern(s) tried: ['tag/(?P<ntag>\\d+)/$']
+[2020-04-10 22:04:44,245][Thread-9:2016][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /index/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 99, in get
+    return render(request, 'index.html', {'data': query_set, })
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 216, in render
+    return template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'tag' with no arguments not found. 1 pattern(s) tried: ['tag/(?P<ntag>\\d+)/$']
+[2020-04-10 22:05:48,904][Thread-1:9484][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /index/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 99, in get
+    return render(request, 'index.html', {'data': query_set, })
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 216, in render
+    return template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'tag' with no arguments not found. 1 pattern(s) tried: ['tag/(?P<ntag>\\d+)/$']
+[2020-04-10 22:05:50,628][Thread-3:3252][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /index/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 99, in get
+    return render(request, 'index.html', {'data': query_set, })
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 216, in render
+    return template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'tag' with no arguments not found. 1 pattern(s) tried: ['tag/(?P<ntag>\\d+)/$']
+[2020-04-10 22:06:37,720][Thread-6:11980][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /index/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 99, in get
+    return render(request, 'index.html', {'data': query_set, })
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 204, in render
+    template = context.template.engine.get_template(template_name)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 135, in find_template
+    template = loader.get_template(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 43, in get_template
+    return Template(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\defaulttags.py", line 1376, in url
+    viewname = parser.compile_filter(bits[1])
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 699, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''/1'' from ''tag''/1''
+[2020-04-10 22:06:54,332][Thread-8:13608][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /index/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 99, in get
+    return render(request, 'index.html', {'data': query_set, })
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 216, in render
+    return template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'tag/1' not found. 'tag/1' is not a valid view function or pattern name.
+[2020-04-10 22:06:55,530][Thread-7:3568][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /index/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 99, in get
+    return render(request, 'index.html', {'data': query_set, })
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 216, in render
+    return template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'tag/1' not found. 'tag/1' is not a valid view function or pattern name.
+[2020-04-10 22:10:13,455][Thread-10:5352][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /index/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 99, in get
+    return render(request, 'index.html', {'data': query_set, })
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 216, in render
+    return template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'tag' with arguments '('',)' not found. 1 pattern(s) tried: ['tag/(?P<ntag>\\d+)/$']
+[2020-04-10 22:20:37,628][Thread-1:2520][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /category/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 113, in get
+    data = search(request, classification=classification)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 61, in search
+    list1.append(i.book_tag)
+AttributeError: 'dict' object has no attribute 'book_tag'
+[2020-04-10 22:31:19,217][Thread-3:8056][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /category/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 112, in get
+    data = search(request, classification=classification)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 57, in search
+    tagb = Book.objects.all().values('tag__name')
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 700, in values
+    clone = self._values(*fields, **expressions)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 695, in _values
+    clone.query.set_values(fields)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1896, in set_values
+    self.add_fields(field_names, True)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1644, in add_fields
+    _, targets, _, joins, path = self.setup_joins(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1416, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1351, in names_to_path
+    raise FieldError("Cannot resolve keyword '%s' into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'tag' into field. Choices are: attachment, attachment_num, authors, bar_code, batch_no, book_tag, bpan_code, bpan_link, brand, brief, china_catalog, compile, course_img, dictation, drawer, editer, finishing, first_category, foreign_book_name, format, id, isbn, issn, jdPrice, keywords, language, letters, martPrice, order, pack_num, packages, pages, papers, photography, pick_state, print_no, print_time, proofreader, pub_date, publish_no, publish_time, publishers, read, related_books, related_by, remarker, series, sheet, size_and_height, skuId, title, transfer, write
+[2020-04-10 22:46:57,238][Thread-3:11628][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /category/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 113, in get
+    data = search(request, classification=classification)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 76, in search
+    page_obj = Pagination(current_page, query_set.count(), url_prefix, qd, per_page)
+AttributeError: 'Book' object has no attribute 'count'
+[2020-04-10 22:59:56,070][Thread-82:15124][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /archives/1/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 136, in get
+    return render(request, 'detail.html', {'book_obj': book_obj, })
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 1040, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 708, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 849, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 911, in _resolve_lookup
+    current = current()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 382, in get
+    raise self.model.MultipleObjectsReturned(
+Book.models.MultipleObjectsReturned: get() returned more than one Author -- it returned 4!
+[2020-04-10 23:24:11,679][Thread-1:1656][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /archives/1/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 136, in get
+    return render(request, 'detail.html', {'book_obj': book_obj, })
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 1040, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 708, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 849, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 911, in _resolve_lookup
+    current = current()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 382, in get
+    raise self.model.MultipleObjectsReturned(
+Book.models.MultipleObjectsReturned: get() returned more than one Author -- it returned 4!
+[2020-04-10 23:27:19,403][Thread-23:12512][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /archives/1/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 136, in get
+    return render(request, 'detail.html', {'book_obj': book_obj, })
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 1040, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 708, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 849, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 911, in _resolve_lookup
+    current = current()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 382, in get
+    raise self.model.MultipleObjectsReturned(
+Book.models.MultipleObjectsReturned: get() returned more than one Author -- it returned 4!
+[2020-04-10 23:37:54,929][Thread-11:16120][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /tag/1/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 123, in get
+    data = search(request, ntag=ntag)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 54, in search
+    query_set = Book.objects.filter(book_tag=tag).values('id', 'title', 'course_img', 'authors__name')
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 787, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 805, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1273, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1351, in names_to_path
+    raise FieldError("Cannot resolve keyword '%s' into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'book_tag' into field. Choices are: attachment, attachment_num, authors, bar_code, batch_no, book, bpan_code, bpan_link, brand, brief, china_catalog, compile, course_img, dictation, drawer, editer, finishing, first_category, foreign_book_name, format, id, isbn, issn, jdPrice, keywords, language, letters, martPrice, order, pack_num, packages, pages, papers, photography, pick_state, print_no, print_time, proofreader, pub_date, publish_no, publish_time, publishers, read, related_books, remarker, series, sheet, size_and_height, skuId, tags, title, transfer, write
+[2020-04-10 23:40:39,585][Thread-36:13268][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /category/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 113, in get
+    return render(request, 'bookshow_searchshow.html', data)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 135, in find_template
+    template = loader.get_template(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 43, in get_template
+    return Template(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\defaulttags.py", line 827, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\defaulttags.py", line 969, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\defaulttags.py", line 827, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 559, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 81: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+[2020-04-10 23:44:04,253][Thread-4:15876][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /archives/1/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 132, in get
+    return render(request, 'detail.html', {'book_obj': book_obj, })
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 1040, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 708, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 849, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 911, in _resolve_lookup
+    current = current()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 382, in get
+    raise self.model.MultipleObjectsReturned(
+Book.models.MultipleObjectsReturned: get() returned more than one Author -- it returned 4!
+[2020-04-10 23:45:05,482][Thread-1:16156][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /archives/1/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 133, in get
+    return render(request, 'detail.html', {'book_obj': book_obj, })
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 1040, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 708, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 849, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 911, in _resolve_lookup
+    current = current()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 382, in get
+    raise self.model.MultipleObjectsReturned(
+Book.models.MultipleObjectsReturned: get() returned more than one Author -- it returned 4!
+[2020-04-10 23:45:13,991][Thread-3:15436][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /archives/1/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 133, in get
+    return render(request, 'detail.html', {'book_obj': book_obj, })
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 1040, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 708, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 849, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 911, in _resolve_lookup
+    current = current()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 382, in get
+    raise self.model.MultipleObjectsReturned(
+Book.models.MultipleObjectsReturned: get() returned more than one Author -- it returned 4!
+[2020-04-10 23:56:41,214][Thread-4:10256][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /tag/1/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 119, in get
+    data = search(request, ntag=ntag)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 53, in search
+    query_set = Book.objects.filter(book_tag=tag)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 787, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 805, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1273, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1351, in names_to_path
+    raise FieldError("Cannot resolve keyword '%s' into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'book_tag' into field. Choices are: attachment, attachment_num, authors, bar_code, batch_no, book, book_img, bpan_code, bpan_link, brand, brief, china_catalog, compile, dictation, drawer, editer, finishing, first_category, foreign_book_name, format, id, isbn, issn, jdPrice, keywords, language, letters, martPrice, order, pack_num, packages, pages, papers, photography, pick_state, print_no, print_time, proofreader, pub_date, publish_no, publish_time, publishers, read, related_books, remarker, series, sheet, size_and_height, skuId, tags, title, transfer, write
+[2020-04-10 23:56:48,333][Thread-5:15756][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /tag/1/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 119, in get
+    data = search(request, ntag=ntag)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 53, in search
+    query_set = Book.objects.filter(book_tag=tag)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 787, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 805, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1273, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1351, in names_to_path
+    raise FieldError("Cannot resolve keyword '%s' into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'book_tag' into field. Choices are: attachment, attachment_num, authors, bar_code, batch_no, book, book_img, bpan_code, bpan_link, brand, brief, china_catalog, compile, dictation, drawer, editer, finishing, first_category, foreign_book_name, format, id, isbn, issn, jdPrice, keywords, language, letters, martPrice, order, pack_num, packages, pages, papers, photography, pick_state, print_no, print_time, proofreader, pub_date, publish_no, publish_time, publishers, read, related_books, remarker, series, sheet, size_and_height, skuId, tags, title, transfer, write
+[2020-04-10 23:59:28,748][Thread-1:15116][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /tag/1/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 119, in get
+    data = search(request, ntag=ntag)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 53, in search
+    query_set = Book.objects.filter(book_tag=tag)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 787, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 805, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1273, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1351, in names_to_path
+    raise FieldError("Cannot resolve keyword '%s' into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'book_tag' into field. Choices are: attachment, attachment_num, authors, bar_code, batch_no, book, book_img, bpan_code, bpan_link, brand, brief, china_catalog, compile, dictation, drawer, editer, finishing, first_category, foreign_book_name, format, id, isbn, issn, jdPrice, keywords, language, letters, martPrice, order, pack_num, packages, pages, papers, photography, pick_state, print_no, print_time, proofreader, pub_date, publish_no, publish_time, publishers, read, related_books, remarker, series, sheet, size_and_height, skuId, tags, title, transfer, write
+[2020-04-11 00:01:14,662][Thread-12:6352][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /tag/1/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 119, in get
+    data = search(request, ntag=ntag)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 53, in search
+    query_set = Book.objects.filter(book_tag=tag)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 787, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 805, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1273, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1351, in names_to_path
+    raise FieldError("Cannot resolve keyword '%s' into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'book_tag' into field. Choices are: attachment, attachment_num, authors, bar_code, batch_no, book, book_img, bpan_code, bpan_link, brand, brief, china_catalog, compile, dictation, drawer, editer, finishing, first_category, foreign_book_name, format, id, isbn, issn, jdPrice, keywords, language, letters, martPrice, order, pack_num, packages, pages, papers, photography, pick_state, print_no, print_time, proofreader, pub_date, publish_no, publish_time, publishers, read, related_books, remarker, series, sheet, size_and_height, skuId, tags, title, transfer, write
+[2020-04-11 00:01:18,949][Thread-14:14608][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /tag/2/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 119, in get
+    data = search(request, ntag=ntag)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 53, in search
+    query_set = Book.objects.filter(book_tag=tag)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 787, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 805, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1273, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1351, in names_to_path
+    raise FieldError("Cannot resolve keyword '%s' into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'book_tag' into field. Choices are: attachment, attachment_num, authors, bar_code, batch_no, book, book_img, bpan_code, bpan_link, brand, brief, china_catalog, compile, dictation, drawer, editer, finishing, first_category, foreign_book_name, format, id, isbn, issn, jdPrice, keywords, language, letters, martPrice, order, pack_num, packages, pages, papers, photography, pick_state, print_no, print_time, proofreader, pub_date, publish_no, publish_time, publishers, read, related_books, remarker, series, sheet, size_and_height, skuId, tags, title, transfer, write
+[2020-04-11 00:02:44,498][Thread-3:14736][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /tag/4/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 120, in get
+    data = search(request, ntag=ntag)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 53, in search
+    query_set = Book.objects.filter(book_tag=tag)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 787, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 805, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1273, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1351, in names_to_path
+    raise FieldError("Cannot resolve keyword '%s' into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'book_tag' into field. Choices are: attachment, attachment_num, authors, bar_code, batch_no, book, book_img, bpan_code, bpan_link, brand, brief, china_catalog, compile, dictation, drawer, editer, finishing, first_category, foreign_book_name, format, id, isbn, issn, jdPrice, keywords, language, letters, martPrice, order, pack_num, packages, pages, papers, photography, pick_state, print_no, print_time, proofreader, pub_date, publish_no, publish_time, publishers, read, related_books, remarker, series, sheet, size_and_height, skuId, tags, title, transfer, write
+[2020-04-11 00:02:56,733][Thread-6:15344][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /tag/4/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 120, in get
+    data = search(request, ntag=ntag)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 53, in search
+    query_set = Book.objects.filter(book_tag=tag)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 787, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 805, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1273, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1351, in names_to_path
+    raise FieldError("Cannot resolve keyword '%s' into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'book_tag' into field. Choices are: attachment, attachment_num, authors, bar_code, batch_no, book, book_img, bpan_code, bpan_link, brand, brief, china_catalog, compile, dictation, drawer, editer, finishing, first_category, foreign_book_name, format, id, isbn, issn, jdPrice, keywords, language, letters, martPrice, order, pack_num, packages, pages, papers, photography, pick_state, print_no, print_time, proofreader, pub_date, publish_no, publish_time, publishers, read, related_books, remarker, series, sheet, size_and_height, skuId, tags, title, transfer, write

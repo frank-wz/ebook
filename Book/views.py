@@ -1,6 +1,6 @@
 from django.shortcuts import render, HttpResponse, redirect
 from django.views import View
-from Book.models import Book, Author, AccessCode
+from Book.models import Book, Author, AccessCode, Tag
 from Book.models import FIRST_CATEGORY_LIST, TAG_LIST
 from utils.mypage import Pagination
 from django.db.models import Q
@@ -46,22 +46,24 @@ def search(request, classification=0, ntag=0):
     qd._mutable = True
     current_page = request.GET.get('page', 1)
     if classification:
-        query_set = Book.objects.filter(first_category=classification).values('id', 'title', 'course_img',
-                                                                              'authors__name')
+        query_set = Book.objects.filter(first_category=classification)
 
     elif ntag:
-        query_set = Book.objects.filter(book_tag=ntag).values('id', 'title', 'course_img', 'authors__name')
-
+        tag = Tag.objects.filter(id=ntag)
+        query_set = Book.objects.filter(tags=tag)
     else:
-        query_set = Book.objects.all().values('id', 'title', 'course_img', 'authors__name','language', 'book_tag')
+        query_set = Book.objects.all()
+        # print(query_set)
+
     # q = _get_query_q(request, ['title', 'authors__name', 'isbn', ])  # 模糊检索字段，按需添加
     # query_set = query_set.filter(q)
     # page_obj = Pagination(current_page, query_set.count(), url_prefix, qd, per_page)
     # data = query_set[page_obj.start:page_obj.end]
     # 区分是否为搜索
     if request.GET.get('query'):
-        q = _get_query_q(request, ['title', 'authors__name', 'isbn', ])  # 模糊检索字段，按需添加
+        q = _get_query_q(request, ['title', 'authors__name', 'isbn','tags__name'])  # 模糊检索字段，按需添加
         query_set = query_set.filter(q)
+        query_set = query_set.distinct()
         page_obj = Pagination(current_page, query_set.count(), url_prefix, qd, per_page)
         data = query_set[page_obj.start:page_obj.end]
         return {'data': data, 'page_html': page_obj.page_html()}
@@ -93,7 +95,7 @@ class IndexView(View):
         if request.GET.get('query'):
             data = search(request)
             return render(request, 'bookshow_searchshow.html', data)
-        query_set = Book.objects.all()[:3].values('id', 'title', 'course_img', 'authors__name')
+        query_set = Book.objects.all()[:3]
         # 2 在页面上展示
         return render(request, 'index.html', {'data': query_set, })
 
@@ -126,7 +128,7 @@ class Archives(View):
             return render(request, 'bookshow_searchshow.html', data)
         if bid == 0:
             return redirect('/index')
-        book_obj = Book.objects.filter(id=int(bid)).first()
+        book_obj = Book.objects.filter(id=int(bid))
         return render(request, 'detail.html', {'book_obj': book_obj, })
 
 

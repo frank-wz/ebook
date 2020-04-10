@@ -15,7 +15,9 @@
                 {% if book == data.0 %}
                     <div class="item active">
                         <div style="text-align:center">
-                            <a href="/archives/{{ book.id }}/"><img src="{{ book.course_img }}" referrerpolicy="never" class="img-responsive" alt="" style="display: inline-block"></a>
+                            <a href="/archives/{{ book.id }}/"><img src="{{ book.book_img }}" referrerpolicy="never"
+                                                                    class="img-responsive" alt=""
+                                                                    style="display: inline-block"></a>
                         </div>
                         {#                        <div class="carousel-caption" style="text-align: center; opacity:0.7">#}
                         {#                            <h3 style="color:black">书名：{{ book.title }}</h3>#}
@@ -23,18 +25,28 @@
                         {#                        </div>#}
                         <div style="text-align: center">
                             <h3>书名：{{ book.title }}</h3>
-                            <h3>作者：{{ book.authors__name }}</h3>
+                            <h3>作者：
+                                {% for author in book.authors.all %}
+                                    {{ author.name }}
+                                {% endfor %}
+                            </h3>
                         </div>
                     </div>
                 {% else %}
                     <div class="item">
                         <div style="text-align:center">
-                            <a href="/archives/{{ book.id }}/"><img src="{{ book.course_img }}" referrerpolicy="never" class="img-responsive" alt="" style="display: inline-block"></a>
+                            <a href="/archives/{{ book.id }}/"><img src="{{ book.book_img }}" referrerpolicy="never"
+                                                                    class="img-responsive" alt=""
+                                                                    style="display: inline-block"></a>
 
                         </div>
                         <div style="text-align: center">
                             <h3>书名：{{ book.title }}</h3>
-                            <h3>作者：{{ book.authors__name }}</h3>
+                            <h3>作者：
+                            {% for author in book.authors.all %}
+                                    {{ author.name }}
+                                {% endfor %}
+                            </h3>
                         </div>
                     </div>
                 {% endif %}

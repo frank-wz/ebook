@@ -23,39 +23,6 @@ from django.test import TestCase
 # print(FIRST_CATEGORY_LIST[0][1])
 # print(FIRST_CATEGORY_LIST[1][1])
 
-
-# import os
-#
-# if __name__ == "__main__":
-#     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Ebook_mall.settings")
-#
-#     import django
-#
-#     django.setup()
-#
-#     from Book import models
-#
-#     # 一对一跨表查询
-#     brief = models.Book.objects.first().bookdetail.brief
-#     print(brief)
-#
-#     title = models.BookDetail.objects.first().book.title
-#     print(title)
-
-
-# 今日内容
-# 解决搜索问题
-# 检查搜索页面分页是否可用
-# 加入日志
-# 加入全局缓存
-# 加入标签
-# 标签 语言显示问题
-
-# 今日内容
-# 修改tag对应关系 变成多对多
-# 增加访问频率限制模块
-
-
 # 测试函数修改全局列表，全局变量变化吗
 # lst = [1,2,3,4,5,6]
 #
@@ -64,3 +31,34 @@ from django.test import TestCase
 #     print(lst)
 # func()
 # print(lst)
+
+
+# str1 = '古典 投资 短篇 文化 政治 大家小书 心理学 旅行 恋爱 书单 三毛 学习 中篇 经典 长篇 诗词 创业 阅读 文艺 散文 哲学 下载 外国文学 人物 日本 心灵 励志 生活 合集 中国 必读 随笔 社会 英国 经济 思享 青春 爱情 成长 文学 小说 美国 历史 情感 人生'
+# list1 = str1.split(' ')
+# for i in list1:
+#     print(i)
+
+
+import os
+
+if __name__ == "__main__":
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Ebook_mall.settings")
+
+    import django
+    django.setup()
+
+    from Book import models
+    # # 一对一跨表查询
+    # brief = models.Book.objects.first().bookdetail.brief
+    # print(brief)
+    #
+    # title = models.BookDetail.objects.first().book.title
+    # print(title)
+
+    # 标签查找
+    tag = models.Tag.objects.filter(id=1)
+    book_obj =models.Book.objects.filter(book_tag=tag)
+    print(tag)
+    print(book_obj)
+
+

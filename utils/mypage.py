@@ -75,7 +75,8 @@ class Pagination(object):
         # 生成分页的HTML代码
         page_list = []
         # 添加分页代码的前缀
-        page_list.append('<nav aria-label="Page navigation"><ul class="pagination">')
+        # page_list.append('<nav aria-label="Page navigation"><ul class="pagination">')
+        page_list.append('<nav aria-label="Page navigation"><ul class="pager">')
         # 添加首页
         self.query_dict['page'] = 1
         page_list.append('<li><a href="{}?{}">首页</a></li>'.format(self.url_prefix, self.query_dict.urlencode()))

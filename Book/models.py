@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-__all__ = ["Book", "Author", "AccessCode"]
+__all__ = ["Book", "Author", "AccessCode", 'Tag']
 
 FIRST_CATEGORY_LIST = ((1, '文学'), (2, '人文社科'), (3, '经济管理'), (4, '科技科普'), (5, '计算机于互联网'),(6, '成功励志'),
                        (7, '生活'), (8, '少儿'), (9, '艺术设计'), (10, '漫画绘本'), (11, '教育考试'), (12, '杂志'),(13, '小说'))
@@ -19,7 +19,7 @@ class Book(models.Model):
     """图书表"""
     title = models.CharField(max_length=128, verbose_name="图书的名称")
     # course_img = models.ImageField(upload_to="course/%Y-%m", verbose_name='图书的图片')
-    course_img = models.CharField(max_length=255, verbose_name='图书的图片', help_text="图片网址链接")
+    book_img = models.CharField(max_length=255, verbose_name='图书的图片', help_text="图片网址链接")
     authors = models.ManyToManyField(verbose_name='作者', to='Author')
 
     brief = models.CharField(verbose_name="图书简介", max_length=1024)
@@ -35,9 +35,10 @@ class Book(models.Model):
 
     first_category = models.SmallIntegerField(verbose_name="一级分类", choices=FIRST_CATEGORY_LIST)
 
-    book_tag = models.SmallIntegerField('标签', choices=TAG_LIST, default=0)
+    # book_tag = models.SmallIntegerField('标签', choices=TAG_LIST, default=0)
+    tags = models.ManyToManyField(to='Tag', blank=True, null=True)
     # 相关图书
-    related_books = models.ManyToManyField(to="Book", related_name="related_by", blank=True, null=True)
+    related_books = models.ManyToManyField(to="Book", blank=True, null=True)
     # is_free = models.BooleanField(default=True)
 
     editer = models.CharField(verbose_name='编者', max_length=64, blank=True, null=True)
@@ -108,5 +109,18 @@ class AccessCode(models.Model):
 
     class Meta:
         verbose_name = "验证码"
+        # db_table = verbose_name
+        verbose_name_plural = verbose_name
+
+
+class Tag(models.Model):
+    '''标签'''
+    name = models.CharField(max_length=12)
+    
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "标签"
         # db_table = verbose_name
         verbose_name_plural = verbose_name

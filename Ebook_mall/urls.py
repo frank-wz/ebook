@@ -33,5 +33,5 @@ urlpatterns = [
     url(r'^archives/(?P<bid>\d+)/$', views.Archives.as_view(),name='archives'),
     url(r'^archives/(?P<bid>\d+)/download/$', views.Download.as_view(),name='download'),
     # 除以上均跳转到首页
-    url(r'^.*/$', views.IndexView.as_view()),
+    # url(r'^.*/$', views.IndexView.as_view()),
 ]

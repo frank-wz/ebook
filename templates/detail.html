@@ -1,27 +1,35 @@
 {% extends 'base.html' %}
 
 {% block page-main %}
-
     <div class="col-xs-3 col-sm-3 col-md-3">
-        <img src="{{ book_obj.course_img }}" referrerpolicy="never" class="img-responsive" alt="">
+        <img src="{{ book_obj.0.book_img }}" referrerpolicy="never" class="img-responsive" alt="">
     </div>
     <div class="col-xs-6 col-sm-6 col-md-6">
         <blockquote>
-            <p>书名：<a href="/archives/{{ book_obj.id }}/">{{ book_obj.title }}</a></p>
-            <p>作者：<a href="/archives/?query={{ book_obj.authors.get }}">{{ book_obj.authors.get }}</a></p>
-            <p>上架日期: {{ book_obj.pub_date }}</p>
+            <p>书名：<a href="/archives/{{ book_obj.0.id }}/">{{ book_obj.0.title }}</a></p>
+
+            <p>作者：
+                {% for author in book_obj.0.authors.all %}
+                        <a href="?query={{ author.name }}">{{ author.name }}</a>
+                {% endfor %}</p>
+
+            <p>上架日期: {{ book_obj.0.pub_date }}</p>
 {#            <p>上架日期: {{ book_obj.pub_date |date:'Y-m-d'}}</p>#}
-            <p>ISBN：<a href="/index/?query={{ book_obj.isbn }}">{{ book_obj.isbn }}</a></p>
-            {#        <p>ISSN<a href="">{{ book_obj.issn }}</a></p>#}
-            <p>语言: {{ book_obj.get_language_display }}</p>
-            <p>标签: <a href="/tag/{{ book_obj.book_tag }}">{{ book_obj.get_book_tag_display }}</a></p>
-            <a class="btn btn-info" href="/archives/{{ book_obj.id }}/download/" role="button">去下载</a>
-{#            <a class="btn btn-info" href="{{ book_obj.bpan_link }}" role="button">去百度网盘下载#}
-{#                (提取码：{{ book_obj.bpan_code }})</a>#}
+            <p>ISBN：<a href="?query={{ book_obj.0.isbn }}">{{ book_obj.0.isbn }}</a></p>
+            <p>语言: {{ book_obj.0.get_language_display }}</p>
+            <p>标签: {% if book_obj.0.tags.all %}
+                    {% for tag in book_obj.0.tags.all %}
+                           <a href="?query={{ tag.name }}" class="label label-info" >{{ tag.name }}</a>
+                    {% endfor %}
+                    {% else %}
+                    暂无
+                    {% endif %}
+            </p>
+            <a class="btn btn-info" href="/archives/{{ book_obj.0.id }}/download/" role="button">去下载</a>
         </blockquote>
         <hr>
         <blockquote><p>图书简介：</p></blockquote>
-        <p>{{ book_obj.brief }}</p>
+        <p>{{ book_obj.0.brief }}</p>
 
     </div>
     <div class="col-xs-3 col-sm-3 col-md-3">
