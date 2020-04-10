@@ -54,7 +54,6 @@ def search(request, classification=0, ntag=0):
 
     else:
         query_set = Book.objects.all().values('id', 'title', 'course_img', 'authors__name','language', 'book_tag')
-        print(query_set)
     # q = _get_query_q(request, ['title', 'authors__name', 'isbn', ])  # 模糊检索字段，按需添加
     # query_set = query_set.filter(q)
     # page_obj = Pagination(current_page, query_set.count(), url_prefix, qd, per_page)
@@ -131,11 +130,21 @@ class Archives(View):
         return render(request, 'detail.html', {'book_obj': book_obj, })
 
 
-def download(request,bid):
-    book_obj = Book.objects.filter(id=int(bid)).first()
-    if request.method == 'POST':
+class Download(View):
+    def get(self, request, bid=0):
+        if request.GET.get('query'):
+            data = search(request)
+            return render(request, 'bookshow_searchshow.html', data)
+        if bid == 0:
+            return redirect('/index')
+        book_obj = Book.objects.filter(id=int(bid)).first()
+        return render(request, 'download.html', {'book_obj': book_obj, })
+
+
+    def post(self, request, bid):
+        book_obj = Book.objects.filter(id=int(bid)).first()
         # 设置状态码，前端页面做页面判断
-        res = {"code":"0"}
+        res = {"code": "0"}
         # 获取数据库中设置的验证码
         access_code = AccessCode.objects.all().values('access_code')
         access_code_list = []
@@ -146,5 +155,5 @@ def download(request,bid):
         # 判断输入是否正确
         if accessCode in access_code_list:
             res["code"] = '1'
-        return render(request,'download.html',{'res':res, 'book_obj': book_obj})
-    return render(request, 'download.html', {'book_obj': book_obj})
+        return render(request, 'download.html', {'res': res, 'book_obj': book_obj})
+
