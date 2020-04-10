@@ -135,6 +135,10 @@ STATICFILES_DIRS = [
 # 分页器定制每页展示条数
 PER_PAGE = 3
 
+# 日期格式
+# DATE_FORMAT = 'Y-m-d'
+# DATETIME_FORMAT = 'Y-m-d H:i:s'
+
 # 日志文件的配置
 # 项目日志文件存放的目录
 BASE_LOG_DIR = os.path.join(BASE_DIR, "log")

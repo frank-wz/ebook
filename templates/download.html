@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block page-css %}
+
+{% endblock %}
+
+
+{% block page-main %}
+    {% load static %}
+    <div class="col-xs-12 col-sm-9 col-md-9">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+                <tr>
+                    <td>文件下载</td>
+                </tr>
+                <tr>
+                    <td>文件名称：{{ book_obj.title }}</td>
+                </tr>
+                <tr>
+                    <td>下载声明：本站所有资源均来自网络，不得用于商业用途，如有【版权】或【链接失效】等问题，请联系站长！</td>
+                </tr>   
+                <tr>
+                    <td>网盘链接：<a href="{{ book_obj.bpan_link }}">百度网盘</a></td>
+                </tr>
+                </tr>
+            </table>
+        </div>
+        <div class="row">
+            <div class="col-xs-9 col-sm-9 col-md-9">
+                <div id="div1">
+                    {% if res.code == '1' %}
+                        <h4>提取码：{{ book_obj.bpan_code }}</h4>
+                    {% elif res.code == '0' %}
+                        <h4>提取码已经被隐藏，输入验证码即可查看：</h4>
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <label for="accessCode"></label>
+                            <input type="text" name="accessCode" id="accessCode">
+                            <input type="submit" class="btn btn-info">
+                            <p style="color:red;">验证码输入错误，请重新输入！</p>
+                        </form>
+                        <p>由于本站电子书资源经常不定期更新，为了让书友第一时间收到更新信息，本站已开通微信公众号。微信扫描右侧二维码关注后回复 <strong
+                                style="color: red">"验证码"</strong>，即可获取验证码。<strong
+                                style="color: red">【验证码不定期更换】</strong></p>
+                    {% else %}
+                        <h4>提取码已经被隐藏，输入验证码即可查看：</h4>
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <label for="accessCode"></label>
+                            <input type="text" name="accessCode" id="accessCode">
+                            <input type="submit" class="btn btn-info">
+                        </form>
+                        <p>由于本站电子书资源经常不定期更新，为了让书友第一时间收到更新信息，本站已开通微信公众号。微信扫描右侧二维码关注后回复 <strong
+                                style="color: red">"验证码"</strong>，即可获取验证码。<strong
+                                style="color: red">【验证码不定期更换】</strong></p>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3"><img class="response" style="width: 90%"
+                                                         src="{% static 'official_accounts_qrcode.jpg' %}" alt=""></div>
+        </div>
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-3">
+        预留
+    </div>
+
+{% endblock %}

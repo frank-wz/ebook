@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-__all__ = ["Book", "Author"]
+__all__ = ["Book", "Author", "AccessCode"]
 
 FIRST_CATEGORY_LIST = ((1, '文学'), (2, '人文社科'), (3, '经济管理'), (4, '科技科普'), (5, '计算机于互联网'),(6, '成功励志'),
                        (7, '生活'), (8, '少儿'), (9, '艺术设计'), (10, '漫画绘本'), (11, '教育考试'), (12, '杂志'),(13, '小说'))
@@ -81,10 +81,10 @@ class Book(models.Model):
     def __str__(self):
         return self.title
 
-    # class Meta:
-        # verbose_name = "图书表"
+    class Meta:
+        verbose_name = "图书表"
         # db_table = verbose_name
-        # verbose_name_plural = verbose_name
+        verbose_name_plural = verbose_name
 
 
 class Author(models.Model):
@@ -94,7 +94,19 @@ class Author(models.Model):
     def __str__(self):
         return self.name
 
-    # class Meta:
-        # verbose_name = "作者表"
+    class Meta:
+        verbose_name = "作者表"
         # db_table = verbose_name
-        # verbose_name_plural = verbose_name
+        verbose_name_plural = verbose_name
+
+class AccessCode(models.Model):
+    """验证码"""
+    access_code = models.CharField(max_length=32,unique=True)
+
+    def __str__(self):
+        return self.access_code
+
+    class Meta:
+        verbose_name = "验证码"
+        # db_table = verbose_name
+        verbose_name_plural = verbose_name

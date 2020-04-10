@@ -1,11 +1,12 @@
 from django.shortcuts import render, HttpResponse, redirect
 from django.views import View
-from Book.models import Book, Author
+from Book.models import Book, Author, AccessCode
 from Book.models import FIRST_CATEGORY_LIST, TAG_LIST
 from utils.mypage import Pagination
 from django.db.models import Q
 from django.conf import settings
 import logging
+from django.http import JsonResponse
 
 # 缓存使用redis时使用
 # from django_redis import get_redis_connection
@@ -128,3 +129,22 @@ class Archives(View):
             return redirect('/index')
         book_obj = Book.objects.filter(id=int(bid)).first()
         return render(request, 'detail.html', {'book_obj': book_obj, })
+
+
+def download(request,bid):
+    book_obj = Book.objects.filter(id=int(bid)).first()
+    if request.method == 'POST':
+        # 设置状态码，前端页面做页面判断
+        res = {"code":"0"}
+        # 获取数据库中设置的验证码
+        access_code = AccessCode.objects.all().values('access_code')
+        access_code_list = []
+        for i in access_code:
+            access_code_list.append(i['access_code'])
+        # 获取用户输入
+        accessCode = request.POST.get('accessCode')
+        # 判断输入是否正确
+        if accessCode in access_code_list:
+            res["code"] = '1'
+        return render(request,'download.html',{'res':res, 'book_obj': book_obj})
+    return render(request, 'download.html', {'book_obj': book_obj})
