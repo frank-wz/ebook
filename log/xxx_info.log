@@ -2029,3 +2029,550 @@ tz
 [2020-04-11 01:25:18,020][Thread-73:15860][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/1/]
 [2020-04-11 01:25:22,183][Thread-78:8064][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/0/]
 [2020-04-11 01:25:22,233][Thread-79:15056][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/1/]
+[2020-04-11 12:48:43,805][Thread-3:1336][task_id:django.request][base.py:150][WARNING][Not Found: /favicon.ico]
+[2020-04-11 12:50:23,302][Thread-42:460][task_id:django.request][base.py:150][WARNING][Not Found: /archives/508/499]
+[2020-04-11 14:04:14,702][Thread-68:15100][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:04:20,564][Thread-72:14876][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:04:22,170][Thread-74:6264][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:05:24,447][Thread-75:10952][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:05:27,243][Thread-77:6500][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:05:44,593][Thread-78:7092][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:14:52,090][Thread-90:9256][task_id:django.request][base.py:150][WARNING][Not Found: /favicon.ico]
+[2020-04-11 14:15:00,686][Thread-89:2884][task_id:django.request][base.py:150][WARNING][Not Found: /favicon.ico]
+[2020-04-11 14:15:08,378][Thread-116:3464][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/0]
+[2020-04-11 14:15:08,387][Thread-117:2964][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/1]
+[2020-04-11 14:26:11,834][Thread-12:14588][task_id:django.request][base.py:150][WARNING][Not Found: /favicon.ico]
+[2020-04-11 14:26:15,483][Thread-11:14612][task_id:django.request][base.py:150][WARNING][Not Found: /favicon.ico]
+[2020-04-11 14:43:15,903][Thread-33:15584][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:43:17,240][Thread-34:1708][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:43:17,862][Thread-36:14612][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:43:19,107][Thread-40:8604][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:43:19,941][Thread-42:3600][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:43:21,019][Thread-43:2724][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:43:22,288][Thread-45:5320][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:43:28,936][Thread-48:9832][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:44:25,413][Thread-67:7868][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:44:28,951][Thread-69:16068][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:44:29,968][Thread-71:2340][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:44:30,871][Thread-73:7592][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/0/]
+[2020-04-11 14:44:30,931][Thread-74:9736][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:44:30,943][Thread-75:2696][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/1/]
+[2020-04-11 14:44:35,781][Thread-77:492][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/5]
+[2020-04-11 14:44:35,788][Thread-78:5524][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/6]
+[2020-04-11 14:44:35,863][Thread-79:14924][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/7]
+[2020-04-11 14:44:35,912][Thread-80:14068][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:44:47,272][Thread-82:9612][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/2]
+[2020-04-11 14:44:47,281][Thread-83:6356][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/3]
+[2020-04-11 14:44:47,363][Thread-84:5376][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/4]
+[2020-04-11 14:44:47,426][Thread-85:10556][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:44:49,201][Thread-87:16340][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/2]
+[2020-04-11 14:44:49,206][Thread-88:13972][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/3]
+[2020-04-11 14:44:49,287][Thread-89:13716][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/4]
+[2020-04-11 14:44:49,338][Thread-90:3336][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:44:50,820][Thread-92:11356][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/0/]
+[2020-04-11 14:44:50,872][Thread-93:15696][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:44:50,881][Thread-94:9780][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/1/]
+[2020-04-11 14:49:01,321][Thread-42:1036][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 14:49:17,177][Thread-44:14872][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/0/]
+[2020-04-11 14:49:17,241][Thread-45:3372][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:07:26,362][Thread-23:6948][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:07:28,226][Thread-32:15968][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:07:29,680][Thread-36:15856][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/Generic_picture.jpg]
+[2020-04-11 16:07:29,992][Thread-42:15848][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:09:10,656][Thread-46:1896][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/{% static 'Generic_picture.jpg' %}]
+[2020-04-11 16:09:10,944][Thread-52:15960][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:11:42,524][Thread-4:15324][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/Generic_picture.jpg]
+[2020-04-11 16:11:42,809][Thread-11:16304][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:18:07,236][Thread-19:14352][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/Generic_picture.jpg]
+[2020-04-11 16:18:07,443][Thread-22:8340][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:18:46,751][Thread-24:5268][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /category/3/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 110, in get
+    return render(request, 'bookshow_searchshow.html', data)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 135, in find_template
+    template = loader.get_template(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 43, in get_template
+    return Template(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 559, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 92: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+[2020-04-11 16:18:54,861][Thread-23:14596][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /category/3/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 110, in get
+    return render(request, 'bookshow_searchshow.html', data)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 135, in find_template
+    template = loader.get_template(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 43, in get_template
+    return Template(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 559, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 92: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+[2020-04-11 16:18:57,043][Thread-25:6448][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /category/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 110, in get
+    return render(request, 'bookshow_searchshow.html', data)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 135, in find_template
+    template = loader.get_template(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 43, in get_template
+    return Template(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 559, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 92: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+[2020-04-11 16:19:06,688][Thread-44:15668][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:19:08,679][Thread-46:8684][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /category/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 110, in get
+    return render(request, 'bookshow_searchshow.html', data)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 135, in find_template
+    template = loader.get_template(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 43, in get_template
+    return Template(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 559, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 92: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+[2020-04-11 16:19:42,290][Thread-59:4792][task_id:django.request][base.py:150][WARNING][Not Found: /category/3/Generic_picture.jpg]
+[2020-04-11 16:19:42,587][Thread-65:12364][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:20:03,541][Thread-75:9504][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:20:07,962][Thread-85:10812][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:20:58,579][Thread-11:14568][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:01,869][Thread-21:8592][task_id:django.request][base.py:150][WARNING][Not Found: /archives/16/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:06,029][Thread-22:4776][task_id:django.request][base.py:150][WARNING][Not Found: /archives/16/download/7]
+[2020-04-11 16:21:10,606][Thread-32:14408][task_id:django.request][base.py:150][WARNING][Not Found: /archives/16/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:11,301][Thread-42:15604][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:44,436][Thread-43:13396][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:46,562][Thread-44:13636][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:47,180][Thread-45:5132][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:47,893][Thread-46:7176][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:48,329][Thread-47:13916][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:48,692][Thread-48:16020][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:48,846][Thread-49:132][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:49,078][Thread-50:1668][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:49,177][Thread-51:10736][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:49,378][Thread-52:16356][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:49,532][Thread-53:2320][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:49,729][Thread-54:540][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:49,840][Thread-55:13400][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:50,005][Thread-56:14928][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:50,022][Thread-57:15324][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:50,052][Thread-58:9856][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:50,153][Thread-59:460][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:50,288][Thread-60:15872][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:50,302][Thread-61:8856][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:21:50,425][Thread-62:12672][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:22:02,585][Thread-91:6128][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:22:04,035][Thread-92:15108][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:22:05,193][Thread-93:4776][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:22:07,122][Thread-102:10548][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:22:09,590][Thread-112:10924][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:22:11,118][Thread-113:3832][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:27:25,128][Thread-3:6492][task_id:django.request][base.py:150][WARNING][Not Found: /]
+[2020-04-11 16:27:41,963][Thread-7:444][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:27:43,900][Thread-8:4468][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:27:43,931][Thread-9:8868][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:27:44,183][Thread-10:14436][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:27:44,465][Thread-11:13620][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:27:44,648][Thread-12:9292][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:32:36,647][Thread-1:6604][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /index/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 100, in get
+    return render(request, 'index.html', {'data': query_set, })
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 135, in find_template
+    template = loader.get_template(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 43, in get_template
+    return Template(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 559, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 76: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2020-04-11 16:32:40,695][Thread-3:15880][task_id:django.request][exception.py:132][ERROR][Internal Server Error: /index/]
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\python learning\Ebook_mall\Book\views.py", line 100, in get
+    return render(request, 'index.html', {'data': query_set, })
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 135, in find_template
+    template = loader.get_template(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 43, in get_template
+    return Template(
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\wzdlu\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 559, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 76: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2020-04-11 16:34:14,919][Thread-5:14808][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:16,885][Thread-6:12680][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:16,914][Thread-7:8604][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:16,931][Thread-8:9832][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:19,150][Thread-9:12244][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:19,166][Thread-10:8828][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:20,101][Thread-11:10156][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:21,381][Thread-12:15052][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:21,430][Thread-13:15020][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:22,548][Thread-14:13852][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:22,565][Thread-15:1904][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:31,950][Thread-16:15144][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:33,390][Thread-18:4572][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:35,462][Thread-19:2460][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:41,012][Thread-21:14672][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:41,089][Thread-22:11156][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:41,358][Thread-23:1588][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:41,374][Thread-24:7072][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:41,594][Thread-25:9796][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:41,608][Thread-26:8864][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:41,739][Thread-27:9504][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:41,773][Thread-28:4980][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:41,908][Thread-29:15948][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:42,007][Thread-30:560][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:42,107][Thread-31:15724][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:42,192][Thread-32:10988][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:42,223][Thread-33:3668][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:42,306][Thread-34:9428][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:42,340][Thread-35:15080][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:42,356][Thread-36:5664][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:42,424][Thread-37:11804][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:42,442][Thread-38:8980][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:42,540][Thread-39:14704][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:42,558][Thread-40:2012][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:34:42,640][Thread-41:8644][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:29,758][Thread-58:2680][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:30,044][Thread-59:15700][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:30,320][Thread-60:3308][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:30,353][Thread-61:15408][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:30,371][Thread-62:9736][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:30,419][Thread-63:6724][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:30,586][Thread-64:13096][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:30,769][Thread-65:12028][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:30,872][Thread-66:7316][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:31,054][Thread-67:6528][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:31,136][Thread-68:13628][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:31,188][Thread-69:5592][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:31,318][Thread-70:16352][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:31,419][Thread-71:10472][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:31,569][Thread-72:5020][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:31,656][Thread-73:2032][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:31,702][Thread-74:15956][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:31,819][Thread-75:1952][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:32,002][Thread-76:13620][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:32,319][Thread-77:5132][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:32,439][Thread-78:13400][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:32,570][Thread-79:15044][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:32,621][Thread-80:16028][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:32,736][Thread-81:12160][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:36:32,753][Thread-82:10948][task_id:django.request][base.py:150][WARNING][Not Found: /archives/1/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:01,758][Thread-107:12500][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:03,374][Thread-109:11860][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:03,421][Thread-110:1852][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:25,169][Thread-111:14752][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:26,364][Thread-112:14420][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:26,446][Thread-113:15328][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:26,463][Thread-114:444][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:51,024][Thread-115:7072][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:51,305][Thread-116:6632][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:51,439][Thread-117:13852][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:51,555][Thread-118:6756][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:51,656][Thread-119:15560][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:51,772][Thread-120:9072][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:51,789][Thread-121:10536][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:51,988][Thread-122:16120][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:52,055][Thread-123:7208][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:52,072][Thread-124:7932][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:52,173][Thread-125:15196][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:52,189][Thread-126:14652][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:52,273][Thread-127:10988][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:52,371][Thread-128:3896][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:52,406][Thread-129:16320][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:52,422][Thread-130:5504][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:52,455][Thread-131:3372][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:52,472][Thread-132:13500][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:52,489][Thread-133:3668][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:52,506][Thread-134:6028][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:52,593][Thread-135:15948][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:52,606][Thread-136:3284][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:52,623][Thread-137:660][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:52,671][Thread-138:9896][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 16:38:52,690][Thread-139:9436][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 17:01:59,542][Thread-6:14540][task_id:django.request][base.py:150][WARNING][Not Found: /category/static/official_accounts_qrcode.jpg]
+[2020-04-11 17:02:01,072][Thread-8:14792][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 17:02:05,324][Thread-9:3652][task_id:django.request][base.py:150][WARNING][Not Found: /archives/7/static/official_accounts_qrcode.jpg]
+[2020-04-11 17:13:21,914][Thread-3:16096][task_id:django.request][base.py:150][WARNING][Not Found: /Ebook_mall/static/official_accounts_qrcode.jpg]
+[2020-04-11 17:13:24,923][Thread-4:15912][task_id:django.request][base.py:150][WARNING][Not Found: /Ebook_mall/static/official_accounts_qrcode.jpg]
+[2020-04-11 17:16:23,068][Thread-4:15020][task_id:django.request][base.py:150][WARNING][Not Found: /Ebook_mall/static/official_accounts_qrcode.jpg]
+[2020-04-11 17:16:26,198][Thread-5:7452][task_id:django.request][base.py:150][WARNING][Not Found: /Ebook_mall/static/official_accounts_qrcode.jpg]
+[2020-04-11 17:16:26,757][Thread-6:16024][task_id:django.request][base.py:150][WARNING][Not Found: /Ebook_mall/static/official_accounts_qrcode.jpg]
+[2020-04-11 17:18:31,525][Thread-11:15996][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 17:18:42,554][Thread-12:2320][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 17:18:54,744][Thread-15:2836][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 17:19:01,547][Thread-16:15428][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 17:19:02,408][Thread-17:16184][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 17:19:02,558][Thread-18:5928][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 17:19:03,858][Thread-19:4852][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 17:19:03,923][Thread-20:5640][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 17:19:04,189][Thread-21:6804][task_id:django.request][base.py:150][WARNING][Not Found: /archives/static/official_accounts_qrcode.jpg]
+[2020-04-11 17:22:29,536][Thread-28:9472][task_id:django.request][base.py:150][WARNING][Not Found: /archives/2/.../static/official_accounts_qrcode.jpg]
+[2020-04-11 17:22:31,740][Thread-29:3424][task_id:django.request][base.py:150][WARNING][Not Found: /archives/2/.../static/official_accounts_qrcode.jpg]
+[2020-04-11 17:22:31,770][Thread-30:13884][task_id:django.request][base.py:150][WARNING][Not Found: /archives/2/.../static/official_accounts_qrcode.jpg]

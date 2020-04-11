@@ -19,7 +19,7 @@ class Book(models.Model):
     """图书表"""
     title = models.CharField(max_length=128, verbose_name="图书的名称")
     # course_img = models.ImageField(upload_to="course/%Y-%m", verbose_name='图书的图片')
-    book_img = models.CharField(max_length=255, verbose_name='图书的图片', help_text="图片网址链接")
+    book_img = models.CharField(max_length=255, verbose_name='图书的图片', help_text="图片网址链接", default='/static/Generic_picture.jpg')
     authors = models.ManyToManyField(verbose_name='作者', to='Author')
 
     brief = models.CharField(verbose_name="图书简介", max_length=1024)

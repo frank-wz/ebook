@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 
-{% block page-main %}
 {% load randomclour %}
+
+{% block page-main %}
+
         <div>
             {% if category %}
                 <div>
@@ -60,13 +62,14 @@
             </div>
         {% endif %}
         <div class="row">
-            <div class="col-xs-9 col-sm-9 col-md-9">
+            <div class="col-xs-12 col-sm-12 col-md-9">
                 <div class="container-fluid">
-
                     {% for book in data %}
                         <div class="row">
                             <div class="col-xs-2 col-sm-2 col-md-1">
+
                                 <img src="{{ book.book_img }}" referrerpolicy="never" style="height: 100px" alt="">
+
                             </div>
                             <div class="col-xs-9 col-sm-9 col-md-10" style="margin-left: 1%">
                                 <blockquote><p><i class="fa fa-user-o" aria-hidden="true"></i> 书名： <a href="/archives/{{ book.id }}/">{{ book.title }}</a></p>
@@ -92,7 +95,7 @@
                 </div>
             </div>
             {% if data %}
-                <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="col-xs-12 col-sm-12 col-md-3">
                     <div class="container-fluid">
                         <div class="row">
 
@@ -118,3 +121,4 @@
         {% endif %}
 
 {% endblock %}
+
