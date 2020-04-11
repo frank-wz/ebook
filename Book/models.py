@@ -86,6 +86,7 @@ class Book(models.Model):
         verbose_name = "图书表"
         # db_table = verbose_name
         verbose_name_plural = verbose_name
+        # ordering = ['-pub_date']
 
 
 class Author(models.Model):

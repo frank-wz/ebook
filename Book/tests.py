@@ -39,26 +39,38 @@ from django.test import TestCase
 #     print(i)
 
 
-import os
+# import os
+#
+# if __name__ == "__main__":
+#     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Ebook_mall.settings")
+#
+#     import django
+#     django.setup()
+#
+#     from Book import models
+#     # # 一对一跨表查询
+#     # brief = models.Book.objects.first().bookdetail.brief
+#     # print(brief)
+#     #
+#     # title = models.BookDetail.objects.first().book.title
+#     # print(title)
+#
+#     # 标签查找
+#     tag = models.Tag.objects.filter(id=1)
+#     book_obj =models.Book.objects.filter(book_tag=tag)
+#     print(tag)
+#     print(book_obj)
 
-if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Ebook_mall.settings")
+from random import choice
+# def classcolour():
+#     c_list = ["label label-success", "label label-warning", "label label-danger", "label label-info", "label label-active"]
+#     value = choice(c_list)
+#     return value
+#
+# print(classcolour())
 
-    import django
-    django.setup()
-
-    from Book import models
-    # # 一对一跨表查询
-    # brief = models.Book.objects.first().bookdetail.brief
-    # print(brief)
-    #
-    # title = models.BookDetail.objects.first().book.title
-    # print(title)
-
-    # 标签查找
-    tag = models.Tag.objects.filter(id=1)
-    book_obj =models.Book.objects.filter(book_tag=tag)
-    print(tag)
-    print(book_obj)
-
-
+# from random import choice
+# def classcolour(value):
+#     return "{}{}".format(value,choice(["label label-success", "label label-warning", "label label-danger", "label label-info", "label label-active"]))
+#
+# print(classcolour(''))

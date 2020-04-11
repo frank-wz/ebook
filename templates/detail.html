@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block page-main %}
+    {% load randomclour %}
     <div class="col-xs-3 col-sm-3 col-md-3">
         <img src="{{ book_obj.0.book_img }}" referrerpolicy="never" class="img-responsive" alt="">
     </div>
@@ -19,13 +20,13 @@
             <p>语言: {{ book_obj.0.get_language_display }}</p>
             <p>标签: {% if book_obj.0.tags.all %}
                     {% for tag in book_obj.0.tags.all %}
-                           <a href="?query={{ tag.name }}" class="label label-info" >{{ tag.name }}</a>
+                           <a href="?query={{ tag.name }}" class="{{ ''|classcolour }}" >{{ tag.name }}</a>
                     {% endfor %}
                     {% else %}
                     暂无
                     {% endif %}
             </p>
-            <a class="btn btn-info" href="/archives/{{ book_obj.0.id }}/download/" role="button">去下载</a>
+            <a class="btn btn-primary" href="/archives/{{ book_obj.0.id }}/download/" role="button">去下载</a>
         </blockquote>
         <hr>
         <blockquote><p>图书简介：</p></blockquote>
